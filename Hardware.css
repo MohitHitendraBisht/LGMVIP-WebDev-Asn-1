@@ -1,0 +1,155 @@
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  /* .carousel1 {
+    width:200px;
+    height:200px;
+    } */
+    .carousel-item {
+      height: 500px;
+      /* width: ; */
+    }
+    
+    .item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-height: 300px;
+    }
+
+    .heading{
+      color:azure;
+      text-align: center;
+      background-color: black;
+    }
+
+    .categoryimg{
+      height: 200px;
+    }
+    .categorytext{
+      text-align: center;
+      color:burlywood;
+      background-color:darkblue;
+    }
+
+    .photo {
+      /* background-image: url('Images/1.jpg'); */
+      font-weight: bolder;
+      background-size: 300px;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 50%;
+      background-clip: border-box;
+      transition: background-size 0.2s;
+      transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
+      color:black;
+      display: block;
+      width: 190px;
+      height: 190px;
+      text-decoration: none;
+      cursor: pointer;
+      overflow: hidden;
+      text-indent: 100%;
+      white-space:nowrap;
+
+  }
+  .photo2 {
+    background-image: url('Images/1.jpg');
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* border-radius: 50%; */
+    background-clip: border-box;
+    transition: background-size 0.2s;
+    transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
+    /* color: white; */
+    display: block;
+    /* width: 190px;*/        
+    height: 190px;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space:nowrap;
+}
+  
+  .photo:hover {
+      background-size: 500px;
+      text-decoration: none;
+      color: darkblue;
+      background-color: gray;
+  }
+
+.toshow {
+    display: none;
+    background: green;
+    height: 100px;
+    width: 200px;
+    margin: 0 auto;
+    color: white;
+    visibility: hidden;
+}
+#plumbing {
+  display: none;
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+#carpentry {
+  display: none;
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+#electrical {
+  display: none;
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+#construction {
+  display: none;
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+/* .approach {
+  width: 300px;
+  margin: 0 auto;
+} */
+/* .footer{
+  position: fixed;
+  padding-top: 20px;
+  color:azure;
+  text-align: center;
+  background-color: black;
+  height: 70px;
+} */
+.footer {
+  padding-top: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
